@@ -14,7 +14,9 @@ from sklearn.metrics import root_mean_squared_error
 from sklearn.model_selection import cross_val_score
 
 MODEL_FILE = "model.pkl"
+# this is where trained ml model is saved
 PIPELINE_FILE = 'pipeline.pkl'
+# This is another file that stores your preprocessing pipeline
 
 def build_pipeline(num_attribs, cat_attribs):
     # For numerical columns
