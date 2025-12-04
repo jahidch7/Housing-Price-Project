@@ -69,7 +69,7 @@ if not os.path.exists(MODEL_FILE):
     joblib.dump(pipeline, PIPELINE_FILE)
     print("Model is trained. Congrats!")
 else:
-    # Lets do inference
+    # Lets do inference, Using a trained model to make predictions
     model = joblib.load(MODEL_FILE)
     pipeline = joblib.load(PIPELINE_FILE)
 
